@@ -21,6 +21,30 @@ img {
   max-width: 80%;
 }
 
+#slides {
+  width: 80%;
+  margin: 0 auto 10px auto;
+}
+
+#slides .slide {
+  width: 100%;
+  margin: 0;
+  border: 10px solid rgba(128, 128, 128, .5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#slides .slide.hidden {
+  display: none;
+  opacity: 0;
+}
+
+#slides .slide img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
 #map {
   width: 80%;
   height: 50vh;
