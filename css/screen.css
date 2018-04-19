@@ -24,13 +24,12 @@ img {
 #slides {
   width: 80%;
   margin: 0 auto 10px auto;
+  position: relative;
 }
 
 #slides .slide {
   width: 100%;
   margin: 0;
-  border: 10px solid rgba(128, 128, 128, .5);
-  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -40,9 +39,25 @@ img {
 }
 
 #slides .slide img {
+  box-sizing: border-box;
   max-width: 100%;
   width: 100%;
   display: block;
+  border: 10px solid rgba(128, 128, 128, .5);
+  border-radius: 10px;
+}
+
+#slide-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(128, 128, 128, .7);
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #FFF;
 }
 
 #map {
